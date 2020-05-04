@@ -1,0 +1,8 @@
+#env file which has secret token
+.env
+
+#mypy cache file
+**/.mypy_cache/
+
+#python cache
+**/__pycache__/
