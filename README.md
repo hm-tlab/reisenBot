@@ -4,11 +4,13 @@ $ cd reisenBot
 リポジトリをローカルにクローン、リポジトリに移動
 
 #パッケージの環境を合わせる
-$ pip3.8 install -r requirements.txt
+$ pip install -r requirements.txt
 
 #.envに自分のローカルでのtokenを貼り付ける
 $ vi .env
 DISCORD_TOKEN=この部分にペースト
+#.env にローカルでのcommand prefixを書く（他人や本番用となるべく被らないように）
+COMMAND_PREFIX=!
 
 #以下コマンドを実行してbotIDやらがコンソールに出たら起動成功
 $ python3.8 run.py
